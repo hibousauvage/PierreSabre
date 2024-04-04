@@ -10,6 +10,35 @@ public class Yakuza extends Humain {
 
 	}
 
+	public int perdre() {
+		int argentPerdu = getArgent();
+		perdreArgent(getArgent());
+		reputation--;
+
+		StringBuilder s = new StringBuilder();
+		s.append("j'ai perdu mon duel et mes ");
+		s.append(argentPerdu);
+		s.append(" sous, snif... J'ai déshonoré le clan de ");
+		s.append(clan);
+		parler(s.toString());
+
+		return argentPerdu;
+	}
+
+	public int getReputation() {
+		return reputation;
+	}
+
+	public void gagner(int gain) {
+		gagnerArgent(gain);
+		reputation++;
+		StringBuilder s = new StringBuilder();
+		s.append("Ce ronin pensait vraiment battre Yaku Le Noir du clan ");
+		s.append(clan);
+		s.append(" ? Je l'ai depouille de ses 54 sous.");
+		parler(s.toString());
+	}
+
 	public void extorquer(Commercant victime) {
 
 		parler(victime.getNom() + ", si tu tiens à la vie, donne moi ta bourse !");

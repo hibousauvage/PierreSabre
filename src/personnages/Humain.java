@@ -37,9 +37,9 @@ public class Humain {
 			perdreArgent(prix);
 		} else {
 			StringBuilder sb = new StringBuilder();
-			sb.append("j'ai ");
+			sb.append("je n'ai plus que ");
 			sb.append(argent);
-			sb.append(" sous en poche. Je vais pouvoir m'offrir ");
+			sb.append(" sous en poche. Je ne peut meme pas m'offrir ");
 			sb.append(bien);
 			sb.append(" à ");
 			sb.append(prix);

@@ -19,13 +19,15 @@ public class HistoireTP4 {
 		marco.seFaireExtorquer();
 		marco.recevoir(15);
 		marco.boire();
-		Yakuza leNoir = new Yakuza("Yaku Le Noir", "whisky", 30, "Warson");
+		Yakuza leNoir = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong");
 		leNoir.direBonjour();
 		leNoir.parler("Tiens, tiens, ne srait-ce pas un faible marchand qui passe par là ?");
 		leNoir.extorquer(marco);
 		Ronin roro = new Ronin("Roro", "shochu", 60);
 		roro.direBonjour();
 		roro.donner(marco);
+		roro.parler("Je t'ai retrouvé vermine, tu vas payer pour ce que tu as fait à ce pauvre marchand!");
+		roro.provoquer(leNoir);
 
 	}
 
