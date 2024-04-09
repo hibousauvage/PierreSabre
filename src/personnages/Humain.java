@@ -89,7 +89,7 @@ public class Humain {
 			s.append(memoire[i].getNom());
 			s.append(", ");
 		}
-		System.out.println(s.toString());
+		parler(s.toString());
 	}
 
 }
