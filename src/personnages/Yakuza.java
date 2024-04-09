@@ -55,4 +55,14 @@ public class Yakuza extends Humain {
 		s.append(" sous dans ma poche. Hi ! Hi !");
 		parler(s.toString());
 	}
+
+	@Override
+	public void direBonjour() {
+		super.direBonjour();
+		StringBuilder s = new StringBuilder();
+		s.append("Mon clan est celui de ");
+		s.append(clan);
+		s.append(".");
+		parler(s.toString());
+	}
 }
